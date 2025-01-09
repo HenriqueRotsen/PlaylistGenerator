@@ -24,4 +24,4 @@ spec:
       volumes:
       - name: model-volume
         persistentVolumeClaim:
-          claimName: project2-pv2-henriqueferreira
+          claimName: default-storage-class-henriqueferreira
