@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server-deployment
+  namespace: henriqueferreira
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: henriqueferreira-playlist-recommender
+  template:
+    metadata:
+      labels:
+        app: henriqueferreira-playlist-recommender
+    spec:
+      containers:
+      - name: server-container
+        image: henriquerotsen/tp2-server:0.1
+        ports:
+        - containerPort: 30502
+        volumeMounts:
+        - mountPath: /models
+          name: model-volume
+      volumes:
+      - name: model-volume
+        persistentVolumeClaim:
+          claimName: project2-pv2-henriqueferreira
