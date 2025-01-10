@@ -1,0 +1,23 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: program-job
+  namespace: henriqueferreira
+spec:
+  template:
+    metadata:
+      labels:
+        app: henriqueferreira-playlist-recommender
+    spec:
+      containers:
+      - name: program-container
+        image: henriquerotsen/tp2-program:0.1
+        volumeMounts:
+          - name: model-volume
+            mountPath: /models
+      volumes:
+      - name: model-volume
+        persistentVolumeClaim:
+          claimName: project2-pv2-henriqueferreira
+      restartPolicy: Never
+  backoffLimit: 4
