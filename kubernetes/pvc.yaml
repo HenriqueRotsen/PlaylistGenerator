@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: default-storage-class-henriqueferreira
+  name: project2-pv2-henriqueferreira
   namespace: henriqueferreira
 spec:
   accessModes:
@@ -12,3 +12,4 @@ spec:
   selector:
     matchLabels:
       namespace: henriqueferreira
+  storageClassName: default-storage-class-henriqueferreira

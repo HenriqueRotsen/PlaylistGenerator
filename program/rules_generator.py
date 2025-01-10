@@ -33,15 +33,6 @@ class PlaylistRulesGenerator:
             pickle.dump(self.rules, file)
         print(f"Regras salvas em: {filepath}")
     
-    # def load_rules(self, filepath):
-    #     """
-    #     Carrega regras de um arquivo salvo previamente.
-    #     :param filepath: Caminho do arquivo onde as regras estão armazenadas.
-    #     """
-    #     with open(filepath, 'rb') as file:
-    #         self.rules = pickle.load(file)
-    #     print(f"Regras carregadas de: {filepath}")
-    #     return self.rules
 
 # Exemplo de uso
 if __name__ == "__main__":
@@ -52,22 +43,13 @@ if __name__ == "__main__":
     data = pd.read_csv("https://homepages.dcc.ufmg.br/~cunha/hosted/cloudcomp-2023s2-datasets/2023_spotify_ds1.csv", usecols=[6, 7])
 
     # Exemplo de transações
-    transactions = data.groupby('pid')['track_name'].apply(list).tolist()
+    transactions1 = data.groupby('pid')['track_name'].apply(list).tolist()
 
     # Inicializando o gerador de regras
-    generator = PlaylistRulesGenerator(min_sup_ratio=0.07, min_conf=0.1) # ESCOLHER OUTROS VALORES
+    generator = PlaylistRulesGenerator(min_sup_ratio=0.05, min_conf=0.15)
     
     # Gerando regras
-    frequent_itemsets, rules = generator.generate_rules(transactions)
-    print("Regras geradas:")
-    for rule in rules:
-        print(rule)
+    frequent_itemsets, rules = generator.generate_rules(transactions1)
     
     # Salvando regras
-    generator.save_rules("rules.pkl")
-    
-    # # Carregando regras
-    # loaded_rules = generator.load_rules("rules.pkl")
-    # print("Regras carregadas:")
-    # for rule in loaded_rules:
-    #     print(rule)
+    generator.save_rules("./program/rules.pkl")
