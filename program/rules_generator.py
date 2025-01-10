@@ -1,7 +1,6 @@
 import pandas as pd
 import pickle
 import ssl
-import os
 from fpgrowth_py import fpgrowth
 
 class PlaylistRulesGenerator:
@@ -38,8 +37,6 @@ class PlaylistRulesGenerator:
 if __name__ == "__main__":
     ssl._create_default_https_context = ssl._create_unverified_context
 
-    DATASET = os.environ.get('DATASET')
-
     data = pd.read_csv("https://homepages.dcc.ufmg.br/~cunha/hosted/cloudcomp-2023s2-datasets/2023_spotify_ds1.csv", usecols=[6, 7])
 
     # Exemplo de transações
@@ -50,6 +47,6 @@ if __name__ == "__main__":
     
     # Gerando regras
     frequent_itemsets, rules = generator.generate_rules(transactions1)
-    
+
     # Salvando regras
     generator.save_rules("./program/rules.pkl")
