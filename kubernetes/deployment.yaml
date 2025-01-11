@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: server-container
-        image: henriquerotsen/tp2-server:0.2
+        image: henriquerotsen/tp2-server:0.3
         ports:
         - containerPort: 30502
         volumeMounts:
