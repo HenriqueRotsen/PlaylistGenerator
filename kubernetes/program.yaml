@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: program-container
-        image: henriquerotsen/tp2-program:0.2
+        image: henriquerotsen/tp2-program:0.3
         volumeMounts:
           - name: model-volume
             mountPath: /models

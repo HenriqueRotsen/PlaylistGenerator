@@ -16,6 +16,7 @@ def load_model():
         with open(MODEL_PATH, "rb") as file:
             model = pickle.load(file)
             model_date = datetime.fromtimestamp(os.path.getmtime(MODEL_PATH)).strftime("%Y-%m-%d %H:%M:%S")
+            print(f"Gerou o modelo {model} - {model_date}")
             return model, model_date
     except FileNotFoundError:
         print(f"Modelo não encontrado no caminho: {MODEL_PATH}")
@@ -27,12 +28,16 @@ app.model, app.model_date = load_model()
 # Endpoint para recomendações
 @app.route("/api/recommend", methods=["POST"])
 def recommend():
+    print("Começou a recomedação")
     if not app.model:
         return jsonify({"error": "Modelo de recomendação não carregado"}), 500
-
+    
+    print("Carregou o modelo de recomedação")
     # Obtém os dados da requisição
     data = request.get_json(force=True)
     user_songs = data.get("songs", [])
+
+    print(f"Obteve os dados: {user_songs}")
 
     if not user_songs or not isinstance(user_songs, list):
         return jsonify({"error": "Campo 'songs' inválido ou ausente"}), 400
@@ -43,9 +48,11 @@ def recommend():
         antecedent, consequent, confidence = rule
         if antecedent.issubset(set(user_songs)):
             recommendations.extend(consequent)
-
+    
     # Remove duplicatas das recomendações
     recommendations = list(set(recommendations) - set(user_songs))
+
+    print(f"Gerou as recomendações: {recommendations}")
 
     # Retorna a resposta em JSON
     return jsonify({
