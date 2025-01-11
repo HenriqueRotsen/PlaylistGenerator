@@ -8,9 +8,7 @@ spec:
   - ReadWriteMany
   resources:
     requests:
-      memory: "256Mi"
-    limits:
-      memory: "256Mi"
+      storage: 1Gi
   selector:
     matchLabels:
       namespace: henriqueferreira
