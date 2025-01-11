@@ -7,7 +7,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 # Configurações da API
-MODEL_PATH = "program/rules.pkl"  # Caminho do modelo gerado na Parte 1
+MODEL_PATH = "/models/rules.pkl"  # Caminho do modelo gerado na Parte 1
 API_VERSION = "1.0.0"  # Versão da API
 
 # Carrega o modelo de recomendação

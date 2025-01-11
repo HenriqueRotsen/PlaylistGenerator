@@ -58,4 +58,4 @@ if __name__ == "__main__":
     frequent_itemsets, rules = generator.generate_rules(transactions)
 
     # Salvando regras
-    generator.save_rules("./program/rules.pkl")
+    generator.save_rules("/models/rules.pkl")
