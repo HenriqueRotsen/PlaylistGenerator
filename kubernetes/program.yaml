@@ -15,6 +15,9 @@ spec:
         volumeMounts:
           - name: model-volume
             mountPath: /models
+        env:
+        - name: DATASET
+          value: "https://homepages.dcc.ufmg.br/~cunha/hosted/cloudcomp-2023s2-datasets/2023_spotify_ds2.csv"
       volumes:
       - name: model-volume
         persistentVolumeClaim:
