@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: program-job
+  name: program-job-v2
   namespace: henriqueferreira
 spec:
   template:
