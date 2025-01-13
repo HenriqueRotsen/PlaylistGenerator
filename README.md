@@ -6,18 +6,18 @@ Este repositório contém o código e os arquivos necessários para implementar 
 
 ## Sumário
 
-* [Visão Geral do Projeto](#visao-geral-do-projeto)
+* [Visão Geral do Projeto](#visão-geral-do-projeto)
 * [Arquitetura](#arquitetura)
   + [Componentes Principais](#componentes-principais)
 * [Requisitos](#requisitos)
-* [Configuração do Ambiente](#configuracao-do-ambiente)
+* [Configuração do Ambiente](#configuração-do-ambiente)
   + [Kubernetes](#kubernetes)
   + [ArgoCD](#argocd)
-* [Decisões Tomadas](#decisoes-tomadas)
-* [Execução](#execucao)
+* [Decisões Tomadas](#decisões-tomadas)
+* [Execução](#execução)
   + [Passos para Rodar o Projeto](#passos-para-rodar-o-projeto)
   + [Testes](#testes)
-* [Estrutura do Repositório](#estrutura-do-repositorio)
+* [Estrutura do Repositório](#estrutura-do-repositório)
 * [Autor](#autor)
 * [Licença](#licença)
 
