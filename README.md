@@ -4,32 +4,32 @@ Este repositório contém o código e os arquivos necessários para implementar 
 
 ---
 
-## 📋 Sumário
+## Sumário
 
-* [🔍 Visão Geral do Projeto](#%F0%9F%94%8D-visao-geral-do-projeto)
-* [🏗 Arquitetura](#%F0%9F%8F%97-arquitetura)
+* [Visão Geral do Projeto](#visao-geral-do-projeto)
+* [Arquitetura](#arquitetura)
   + [Componentes Principais](#componentes-principais)
-* [✅ Requisitos](#%E2%9C%85-requisitos)
-* [⚙️ Configuração do Ambiente](#%E2%9A%99%EF%B8%8F-configuracao-do-ambiente)
+* [Requisitos](#requisitos)
+* [Configuração do Ambiente](#configuracao-do-ambiente)
   + [Kubernetes](#kubernetes)
   + [ArgoCD](#argocd)
-* [🧠 Decisões Tomadas](#%F0%9F%A7%A0-decisoes-tomadas)
-* [🚀 Execução](#%F0%9F%9A%80-execucao)
+* [Decisões Tomadas](#decisoes-tomadas)
+* [Execução](#execucao)
   + [Passos para Rodar o Projeto](#passos-para-rodar-o-projeto)
   + [Testes](#testes)
-* [📂 Estrutura do Repositório](#%F0%9F%93%82-estrutura-do-repositorio)
-* [✍️ Autor](#%E2%9C%8D%EF%B8%8F-autor)
-* [🛡️ Licença](#%F0%9F%9B%A1%EF%B8%8F-licenca)
+* [Estrutura do Repositório](#estrutura-do-repositorio)
+* [Autor](#autor)
+* [Licença](#licenca)
 
 ---
 
-## 🔍 Visão Geral do Projeto
+## Visão Geral do Projeto
 
 O **Playlist Generator** é uma aplicação que combina machine learning e orquestração de contêineres para gerar recomendações de playlists. Ele utiliza o Kubernetes para gerenciar os recursos do sistema e o ArgoCD para garantir deploys automatizados e integração contínua.
 
 ---
 
-## 🏗 Arquitetura
+## Arquitetura
 
 ### Componentes Principais
 
@@ -49,7 +49,7 @@ O **Playlist Generator** é uma aplicação que combina machine learning e orque
 
 ---
 
-## ✅ Requisitos
+## Requisitos
 
 Certifique-se de ter os seguintes requisitos instalados:
 
@@ -62,7 +62,7 @@ Certifique-se de ter os seguintes requisitos instalados:
 
 ---
 
-## ⚙️ Configuração do Ambiente
+## Configuração do Ambiente
 
 ### Kubernetes
 
@@ -96,7 +96,7 @@ Certifique-se de ter os seguintes requisitos instalados:
 
 ---
 
-## 🧠 Decisões Tomadas
+## Decisões Tomadas
 
 1. **Modularização**:
    - Separação dos componentes em diretórios específicos:
@@ -115,7 +115,7 @@ Certifique-se de ter os seguintes requisitos instalados:
 
 ---
 
-## 🚀 Execução
+## Execução
 
 ### Passos para Rodar o Projeto
 
@@ -155,7 +155,7 @@ Os seguintes testes foram realizados:
 
 ---
 
-## 📂 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 .
@@ -180,13 +180,13 @@ Os seguintes testes foram realizados:
 
 ---
 
-## ✍️ Autor
+## Autor
 
 **Henrique Rotsen**  
 Projeto desenvolvido como parte do Trabalho Prático 2 da disciplina **[Cloud Computing](https://homepages.dcc.ufmg.br/~cunha/teaching/20232/cloudcomp/)**.
 
 ---
 
-## 🛡️ Licença
+## Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](./LICENSE) para detalhes.
