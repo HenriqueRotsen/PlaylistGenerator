@@ -19,7 +19,7 @@ Este repositório contém o código e os arquivos necessários para implementar 
   + [Testes](#testes)
 * [Estrutura do Repositório](#estrutura-do-repositorio)
 * [Autor](#autor)
-* [Licença](#licenca)
+* [Licença](#licença)
 
 ---
 
