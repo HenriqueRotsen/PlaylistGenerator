@@ -6,18 +6,20 @@ Este repositório contém o código e os arquivos necessários para implementar 
 
 ## 📋 Sumário
 
-- [Visão Geral do Projeto](#visão-geral-do-projeto)
-- [Arquitetura](#arquitetura)
-- [Requisitos](#requisitos)
-- [Configuração do Ambiente](#configuração-do-ambiente)
-  - [Kubernetes](#kubernetes)
-  - [ArgoCD](#argocd)
-- [Decisões Tomadas](#decisões-tomadas)
-- [Execução](#execução)
-  - [Passos para Rodar o Projeto](#passos-para-rodar-o-projeto)
-  - [Testes](#testes)
-- [Estrutura do Repositório](#estrutura-do-repositório)
-- [Autor](#autor)
+* [🔍 Visão Geral do Projeto](#%F0%9F%94%8D-visao-geral-do-projeto)
+* [🏗 Arquitetura](#%F0%9F%8F%97-arquitetura)
+  + [Componentes Principais](#componentes-principais)
+* [✅ Requisitos](#%E2%9C%85-requisitos)
+* [⚙️ Configuração do Ambiente](#%E2%9A%99%EF%B8%8F-configuracao-do-ambiente)
+  + [Kubernetes](#kubernetes)
+  + [ArgoCD](#argocd)
+* [🧠 Decisões Tomadas](#%F0%9F%A7%A0-decisoes-tomadas)
+* [🚀 Execução](#%F0%9F%9A%80-execucao)
+  + [Passos para Rodar o Projeto](#passos-para-rodar-o-projeto)
+  + [Testes](#testes)
+* [📂 Estrutura do Repositório](#%F0%9F%93%82-estrutura-do-repositorio)
+* [✍️ Autor](#%E2%9C%8D%EF%B8%8F-autor)
+* [🛡️ Licença](#%F0%9F%9B%A1%EF%B8%8F-licenca)
 
 ---
 
